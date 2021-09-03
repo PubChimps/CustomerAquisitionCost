@@ -59,8 +59,49 @@ vendor_types
 vendors
 ```
 
-| ![ft.png](images/ft9.png) |
+| ![ft9.png](images/ft9.png) |
 |:--:|
 | *Start Initial Sync* will begin the process of having Fivetran bring Customer Acquistion Cost data into BigQuery |
 
 ## Calculating and Displaying Customer Acquistion Costs in Looker
+
+| ![connect_bq_to_looker.png](images/connect_bq_to_looker.png) |
+|:--:|
+| |
+
+| ![navigate_to_marketplace.png](images/navigate_to_marketplace.png) |
+|:--:|
+|  |
+
+| ![Netsuite_Looker_Marketplace_page.png](images/Netsuite_Looker_Marketplace_page.png) |
+|:--:|
+| |
+
+| ![Block_installation_configuration.png](images/Block_installation_configuration.png) |
+|:--:|
+|  |
+
+| ![Navigate_to_explore.png](images/Navigate_to_explore.png) |
+|:--:|
+|  |
+
+| ![block_contents_overview.png](images/block_contents_overview.png) |
+|:--:|
+| |
+
+| ![dashboard_selection.png](images/dashboard_selection.png) |
+|:--:|
+|  |
+
+| ![save_to_dashboard.png](images/save_to_dashboard.png) |
+|:--:|
+|  |
+
+| ![visualize_acquisition_cost.png](images/visualize_acquisition_cost.png) |
+|:--:|
+| |
+
+| ![final_dashboard.png](images/final_dashboard.png) |
+|:--:|
+|  |
+
