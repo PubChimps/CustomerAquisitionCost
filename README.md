@@ -5,7 +5,6 @@
 ## Moving Data to BigQuery with Fivetran
 Fivetran provideds automated data ingestion to BigQuery from a 
 
-
 | ![ft1.png](images/ft1.png) |
 |:--:|
 | To start a Fivetran trial, the **E-mail** and **Company** entered cannot have been used for a trial previously. To achieve this, I created an email for this workshop and used it as the Company as well. Select *Sign up* |
