@@ -1,4 +1,4 @@
-# Customer Aquisition Cost with Fivetran, BigQuery and Looker
+# Customer Acquisition Cost with Fivetran, BigQuery and Looker
 
 ## Identifying the Proper Data Sources
 
@@ -68,7 +68,7 @@ vendors
 |:--:|
 | *Start Initial Sync* will begin the process of having Fivetran bring Customer Acquisition Cost data into BigQuery |
 
-##Configure your Looker instance
+## Configure your Looker connection
 
 Once Fivetran has finished loading your initial sync of NetSuite data into BigQuery, you are ready to connect to Looker so you can get started visualizing your data. 
 
@@ -91,6 +91,8 @@ Once Fivetran has finished loading your initial sync of NetSuite data into BigQu
 | ![block_contents_overview.png](images/block_contents_overview.png) |
 |:--:|
 | Once you have installed the block in your Looker instance, you will see a list of resources added to your Looker instance. This includes three pre-built dashboards to help you review your income statement and balance sheet. However, we are most interested in the transaction details for this analysis |
+
+## Visualize your data
 
 | ![Navigate_to_explore.png](images/Navigate_to_explore.png) |
 |:--:|
