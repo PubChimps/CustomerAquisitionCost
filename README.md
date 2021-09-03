@@ -69,6 +69,7 @@ vendors
 | *Start Initial Sync* will begin the process of having Fivetran bring Customer Acquisition Cost data into BigQuery |
 
 ##Configure your Looker instance
+
 Once Fivetran has finished loading your initial sync of NetSuite data into BigQuery, you are ready to connect to Looker so you can get started visualizing your data. 
 
 | ![connect_bq_to_looker.png](images/connect_bq_to_looker.png) |
@@ -114,3 +115,5 @@ Once Fivetran has finished loading your initial sync of NetSuite data into BigQu
 | ![final_dashboard.png](images/final_dashboard.png) |
 |:--:|
 | You can continue to create and add visualizations to your dashboard to develop a comprehensive overview of your customer acquisition data. You can see [the LookML for this dashboard](https://raw.githubusercontent.com/PubChimps/CustomerAquisitionCost/main/Netsuite_Looker_BigQuery/cac_demo_dashboard.lookml) to give you a head start analyzing your data |
+
+
