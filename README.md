@@ -21,7 +21,7 @@
 |:--:|
 | After creating a password, a Fivetran trial account has been created! Just one connector will be used in this example, select *Set up a connector* |
 
-| ![ft4.png](images/ft4.png) |
+| ![ft4.jpeg](images/ft4.jpeg) |
 |:--:|
 | The data Fivetran will be brining into BigQuery is from NetSuite, search *netsuite* and select *NetSuite SuiteAnalytics*, then *Continue Setup* |
 
