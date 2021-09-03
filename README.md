@@ -3,7 +3,7 @@
 ## Identifying the Proper Data Sources
 
 ## Moving Data to BigQuery with Fivetran
-Fivetran provideds automated data ingestion to BigQuery from a 
+Fivetran provides automated data ingestion to BigQuery from a 
 
 
 | ![ft1.png](images/ft1.png) |
@@ -24,7 +24,7 @@ Fivetran provideds automated data ingestion to BigQuery from a
 
 | ![ft4.png](images/ft4.png) |
 |:--:|
-| The data Fivetran will be brining into BigQuery is from NetSuite, search *netsuite* and select *NetSuite SuiteAnalytics*, then *Continue Setup* |
+| The data Fivetran will be bringing into BigQuery is from NetSuite, search *netsuite* and select *NetSuite SuiteAnalytics*, then *Continue Setup* |
 
 | ![ft5.png](images/ft5.png) |
 |:--:|
@@ -41,7 +41,7 @@ Fivetran provideds automated data ingestion to BigQuery from a
 
 | ![ft8.png](images/ft8.png) |
 |:--:|
-| For Customer Acquistion Costs, the tables below will be needed, once they have been selected and unnecessary have been unselected, click *SAVE AND CONTINUE* |
+| For Customer Acquisition Costs, the tables below will be needed, once they have been selected and unnecessary have been unselected, click *SAVE AND CONTINUE* |
 
 ```
 accounting_books
@@ -66,6 +66,51 @@ vendors
 
 | ![ft.png](images/ft9.png) |
 |:--:|
-| *Start Initial Sync* will begin the process of having Fivetran bring Customer Acquistion Cost data into BigQuery |
+| *Start Initial Sync* will begin the process of having Fivetran bring Customer Acquisition Cost data into BigQuery |
 
-## Calculating and Displaying Customer Acquistion Costs in Looker
+##Configure your Looker instance
+Once Fivetran has finished loading your initial sync of NetSuite data into BigQuery, you are ready to connect to Looker so you can get started visualizing your data. 
+
+| ![connect_bq_to_looker.png](images/connect_bq_to_looker.png) |
+|:--:|
+| Start by logging into your Looker instance. If one doesn't exist already, set up your connection between BigQuery and Looker. Follow the steps in the [Looker documentation](https://docs.looker.com/setup-and-management/database-config/google-bigquery) to get set up |
+
+| ![navigate_to_marketplace.png](images/navigate_to_marketplace.png) |
+|:--:|
+| Navigate to the Looker Marketplace. You can browse the full list of Looker Blocks by [searching the directory](https://looker.com/platform/directory/home) |
+
+| ![Netsuite_Looker_Marketplace_page.png](images/Netsuite_Looker_Marketplace_page.png) |
+|:--:|
+| Search for the "NetSuite by Fivetran" block in the Marketplace, and navigate to the page |
+
+| ![Block_installation_configuration.png](images/Block_installation_configuration.png) |
+|:--:|
+| Click install and you will be prompted for two configuration options. The "connection name" is the name of the BigQuery connection you created earlier. The "Schema Name" is the name of the BigQuery dataset into which data is transferred. |
+
+| ![block_contents_overview.png](images/block_contents_overview.png) |
+|:--:|
+| Once you have installed the block in your Looker instance, you will see a list of resources added to your Looker instance. This includes three pre-built dashboards to help you review your income statement and balance sheet. However, we are most interested in the transaction details for this analysis |
+
+| ![Navigate_to_explore.png](images/Navigate_to_explore.png) |
+|:--:|
+| To get started, navigate to the *Transaction Details* Explore to get started analyzing your data |
+
+| ![Looker_explore.png](images/Looker_explore.png) |
+|:--:|
+| To get started, navigate to the *Transaction Details* Explore to get started analyzing your data |
+
+| ![visualize_acquisition_cost.png](images/visualize_acquisition_cost.png) |
+|:--:|
+| Start visualizing your data by selecting the "Customer Name" dimension and the "Customer Acquisition Cost" and select "Run" in the top right. You can recreate the visualization above by changing the visualization type to "Table" |
+
+| ![save_to_dashboard.png](images/save_to_dashboard.png) |
+|:--:|
+| You can this visualization to a dashboard to enable easier reporting or see it alongside other visualization types |
+
+| ![dashboard_selection.png](images/dashboard_selection.png) |
+|:--:|
+| You may need to create a new dashboard if one doesn't already exist for your customer acquisition cost data |
+
+| ![final_dashboard.png](images/final_dashboard.png) |
+|:--:|
+| You can continue to create and add visualizations to your dashboard to develop a comprehensive overview of your customer acquisition data. You can see [the LookML for this dashboard](https://raw.githubusercontent.com/PubChimps/CustomerAquisitionCost/main/Netsuite_Looker_BigQuery/cac_demo_dashboard.lookml) to give you a head start analyzing your data |
