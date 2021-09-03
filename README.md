@@ -3,7 +3,7 @@
 ## Identifying the Proper Data Sources
 
 ## Moving Data to BigQuery with Fivetran
-Fivetran provideds automated data ingestion to BigQuery from a 
+
 
 | ![ft1.png](images/ft1.png) |
 |:--:|
